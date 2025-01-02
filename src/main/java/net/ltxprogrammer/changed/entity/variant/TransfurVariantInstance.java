@@ -884,10 +884,6 @@ public abstract class TransfurVariantInstance<T extends ChangedEntity> {
         else
             host.maxUpStep = parent.stepSize;
 
-        // Effects
-        if (parent.visionType == VisionType.BLIND) {
-            host.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 20, 1, false, false, false));
-        }
 
         this.tickAbilities();
 
